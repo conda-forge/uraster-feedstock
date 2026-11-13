@@ -1,7 +1,7 @@
 # Define variables in this section that you can use in other parts.
 context:
   name: uraster
-  version: "0.1.8"
+  version: "0.1.9"
 
 package:
   name: ${{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/changliao1025/uraster/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: dd46b55320ba5151769aac0557064d2864d8c14c602811d1ff53bce73c3bdf30
+  sha256: 4efe7a8c547884571276e17408748ec970a1bcdfd098766dd43311927c0f34ce
 
 build:
   noarch: python
@@ -26,8 +26,9 @@ requirements:
     - python >=${{ python_min }}
     - numpy
     - gdal >=3.0.0
-    - pyearth >=0.2.3
-    - pyearthviz3d >=0.1.2
+    - pyearth >=0.2.5
+    - pyearthviz3d >=0.1.4
+    - pyearthmesh >=0.1.2
     - pooch
 
 tests:
